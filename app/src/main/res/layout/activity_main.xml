@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="自定义布局实现竖直滚动效果"/>
+
+    <!-- 自定义布局实现 -->
+    <com.xyzlf.vertical.autoscroll.VerticalScrollView
+        android:id="@+id/vertical_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:intervalDuration="4000"
+        custom:animDuration="1000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="ViewFlipper实现竖直滚动效果"/>
+
+    <!-- ViewFlipper实现 -->
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:flipInterval="4000"
+        android:inAnimation="@anim/push_up_in"
+        android:outAnimation="@anim/push_up_out">
+
+    </ViewFlipper>
+
+</LinearLayout>
