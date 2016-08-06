@@ -54,28 +54,50 @@ Vertical auto scroll View. 仿京东，淘宝，竖直自动轮播view。
 
 	public class MyScrollAdapter extends VerticalScrollAdapter<ItemData> {
 
+	    public MyScrollAdapter(List<ItemData> mDatas) {
+	        super(mDatas);
+	    }
+	
+	    @Override
+	    public View getView(VerticalScrollView parent) {
+	        return LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item, parent, false);
+	    }
+	
+	    @Override
+	    public void setItem(final View view, final ItemData data) {
+	        TextView tv = (TextView) view.findViewById(R.id.content);
+	        tv.setText(data.content);
+	        TextView tag = (TextView) view.findViewById(R.id.tag);
+	        tag.setText(data.tag);
+	        //你可以增加点击事件
+	        view.setOnClickListener(new View.OnClickListener() {
+	            @Override
+	            public void onClick(View v) {
+	                Toast.makeText(view.getContext(), data.tag, Toast.LENGTH_SHORT).show();
+	            }
+	        });
+	    }
+	}
 
-    public MyScrollAdapter(List<ItemData> mDatas) {
-        super(mDatas);
-    }
+# 关于我
+有任何使用问题，可以给我发邮件：
 
-    @Override
-    public View getView(VerticalScrollView parent) {
-        return LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item, parent, false);
-    }
+Author：张利峰
 
-    @Override
-    public void setItem(final View view, final ItemData data) {
-        TextView tv = (TextView) view.findViewById(R.id.content);
-        tv.setText(data.content);
-        TextView tag = (TextView) view.findViewById(R.id.tag);
-        tag.setText(data.tag);
-        //你可以增加点击事件
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(view.getContext(), data.tag, Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-}
+E-mail：519578280@qq.com
+
+# License
+
+    Copyright (C)  LessCode Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
