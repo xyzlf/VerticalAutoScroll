@@ -86,6 +86,21 @@ Author：张利峰
 
 E-mail：519578280@qq.com
 
+# 参照
+
+1、自定义View去实现竖直轮播。
+
+2、用ViewFlipper实现竖直轮播。
+
+以上两点思路参照该文章：
+<http://blog.csdn.net/u013278099/article/details/50934697>
+
+3、用listView实现，竖直自动轮播思路。
+
+csdn: <http://blog.csdn.net/hai_qing_xu_kong/article/details/51013562>
+
+github：<https://github.com/LinhaiGu/ASUpAdvertisementArticle>
+
 # License
 
     Copyright (C)  LessCode Open Source Project
