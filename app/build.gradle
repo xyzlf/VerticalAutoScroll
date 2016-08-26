@@ -27,8 +27,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     //使用 autoplay viewpager
-    compile ('com.xyzlf.autoplay.view:verticalplay:0.0.1') {
-        exclude group: 'com.android.support', module: 'appcompat-v7'
-    }
-//    compile project(':library')
+//    compile ('com.xyzlf.autoplay.view:verticalplay:0.0.1') {
+//        exclude group: 'com.android.support', module: 'appcompat-v7'
+//    }
+    compile project(':library')
 }

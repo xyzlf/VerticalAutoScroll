@@ -101,6 +101,8 @@ csdn: <http://blog.csdn.net/hai_qing_xu_kong/article/details/51013562>
 
 github：<https://github.com/LinhaiGu/ASUpAdvertisementArticle>
 
+4、孙福生用ViewFlipper的思路，封装了一个，挺不错的：<https://github.com/sfsheng0322/MarqueeView>
+
 # License
 
     Copyright (C)  LessCode Open Source Project
