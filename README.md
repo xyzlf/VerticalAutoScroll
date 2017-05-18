@@ -103,6 +103,8 @@ github：<https://github.com/LinhaiGu/ASUpAdvertisementArticle>
 
 4、孙福生用ViewFlipper的思路，封装了一个，挺不错的：<https://github.com/sfsheng0322/MarqueeView>
 
+5、一个帮您快速实现跑马灯效果的library：<https://github.com/gongwen/MarqueeViewLibrary>
+
 # License
 
     Copyright(c) 2016 xyzlf Open Source Project
