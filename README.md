@@ -105,6 +105,8 @@ github：<https://github.com/LinhaiGu/ASUpAdvertisementArticle>
 
 5、一个帮您快速实现跑马灯效果的library：<https://github.com/gongwen/MarqueeViewLibrary>
 
+6、A periodic text updating library：<https://github.com/sdsmdg/RotatingText>
+
 # License
 
     Copyright(c) 2016 xyzlf Open Source Project
